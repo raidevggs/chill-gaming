@@ -6,16 +6,12 @@ url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0
       padding: 0;
       box-sizing: border-box;
 }
-.body {
+body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #background {
-    background-image: url(sophie-turner-LZVmvKlchM0-unsplash.jpg);
+    background-image: url(loop.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -29,7 +25,7 @@ url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0
     --white-color: #fff;
     --dark-color: #252525;
     --primary-color: #fa1d15ce;
-    --secondary-color: #5f4c3c;
+    --secondary-color: #9034a7;
     --light-pink-color: #faf4f5;
     --medium-gray-color: #ccc;
 
@@ -72,7 +68,8 @@ img{
 }
 /*Navbar styling*/
 header {
-    background: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 header .navbar {
     display: flex;
@@ -88,16 +85,16 @@ header .navbar {
 .navbar .nav-menu {
     display: flex;
     gap: 10px;
+    max-width: var(--site-max-width);
 }
 .navbar .nav-menu .nav-link {
     color: black;
     font-size: var(--font-size-m);
     padding: 10px 18px;
     border-radius: 18px;
-    background: var(--white-color);
+    background: rgb(226, 144, 144);
     transition: background-color 0.25s;
 }
 .navbar .nav-menu .nav-link:hover{
     background-color: var(--secondary-color);
-
 }
